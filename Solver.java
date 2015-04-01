@@ -7,7 +7,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-//this is a test
+
 class Solver extends JFrame implements ActionListener {
     private final JButton solve, quit;
     private final JTextField scrambletf;
