@@ -2,7 +2,6 @@
  * Written by Kennan LeJeune and Ethan Vovan
  * Optimal 2x2 Solver v.1.0
  */
-//testing if shit works
 import java.awt.event.*;
 import javax.swing.*;
 import java.awt.*;
