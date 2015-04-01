@@ -34,6 +34,7 @@ class Solver extends JFrame implements ActionListener {
         p.add(solve);
         p.add(quit);
         c.add(p);
+        System.out.print("this is a test delete me");
     }
 
     public static void main(String[] args) {
