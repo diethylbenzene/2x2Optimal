@@ -2,9 +2,6 @@
  * Written by Kennan LeJeune and Ethan Vovan
  * Optimal 2x2 Solver v.1.0
  */
-import java.awt.event.*;
-import javax.swing.*;
-import java.awt.*;
 
 class Solver extends JFrame implements ActionListener {
     private final JButton solve, quit;
