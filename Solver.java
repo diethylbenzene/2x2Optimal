@@ -34,7 +34,6 @@ class Solver extends JFrame implements ActionListener {
         p.add(solve);
         p.add(quit);
         c.add(p);
-        System.out.print("this is a test delete me");
     }
 
     public static void main(String[] args) {
@@ -59,7 +58,7 @@ class Solver extends JFrame implements ActionListener {
         if (event.getSource() == solve) {
             //solverEngine();
             //solutionDisplay.setText(scramble);
-            solutionDisplay.setText("THIS IS FUCKING WORKING");
+            solutionDisplay.setText("THIS IS WORKING");
         }
 
         if (event.getSource() == quit) dispose();
