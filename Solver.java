@@ -8,19 +8,18 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class Solver implements ActionListener {
+class Solver extends JFrame implements ActionListener {
     private final JButton solve, quit;
     private final JTextField scrambletf;
     private final JLabel solutionDisplay, instructions;
-    private JFrame f;
     private Container c;
     private String scramble, solution;
     boolean solved;
     private Solver() {
         solved = false;
-        f = new JFrame("2x2 Solver");
-        f.setSize(400, 280);
-        c = f.getContentPane();
+        this.setTitle("2x2 Solver");
+        setSize(400, 280);
+        c = getContentPane();
         JPanel p = new JPanel();
         solutionDisplay = new JLabel("");
         instructions = new JLabel("Input a scramble, then press solve.");
@@ -38,12 +37,18 @@ class Solver implements ActionListener {
     }
 
     public static void main(String[] args) {
-        Solver s = new Solver();
-        s.f.setVisible(true);
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                Solver s = new Solver();
+                s.setVisible(true);
+            }
+        });
     }
 
     private void solverEngine() {
-        while (!solved) {
+        while (!solved)
+        {
 
         }
 
@@ -56,7 +61,7 @@ class Solver implements ActionListener {
             solutionDisplay.setText("THIS IS FUCKING WORKING");
         }
 
-        if (event.getSource() == quit) f.dispose();
+        if (event.getSource() == quit) dispose();
 
     }
 
