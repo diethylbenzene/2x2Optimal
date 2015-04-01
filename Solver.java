@@ -3,18 +3,18 @@
  * Optimal 2x2 Solver v.1.0
  */
 
+import java.awt.event.*;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 class Solver extends JFrame implements ActionListener {
     private final JButton solve, quit;
     private final JTextField scrambletf;
     private final JLabel solutionDisplay, instructions;
+    boolean solved;
     private Container c;
     private String scramble, solution;
-    boolean solved;
+
     private Solver() {
         solved = false;
         this.setTitle("2x2 Solver");
@@ -34,6 +34,7 @@ class Solver extends JFrame implements ActionListener {
         p.add(solve);
         p.add(quit);
         c.add(p);
+
     }
 
     public static void main(String[] args) {
@@ -47,8 +48,7 @@ class Solver extends JFrame implements ActionListener {
     }
 
     private void solverEngine() {
-        while (!solved)
-        {
+        while (!solved) {
 
         }
 
